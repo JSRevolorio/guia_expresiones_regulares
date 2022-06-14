@@ -1,21 +1,8 @@
-
-```diff
-+ Green
-- Red
-! Orange
-```
-
-<style>
-b { color: Blue }
-r { color: red }
-g { color: Green }
-</style>
-
 [<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--xNN3N2qj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lfeb29tti4oe0efwgu65.jpeg" width="600" height="200" />](dedde)
 
 # Guía de expresiones regulares
 
-## Expresiones regulares
+### Expresiones regulares
 Las expresiones regulares son patrones utilizados para encontrar una determinada combinación de caracteres dentro de una cadena de texto. Las expresiones regulares proporcionan una manera muy flexible de buscar o reconocer cadenas de texto.
 
 <br/>
@@ -29,7 +16,6 @@ Las expresiones regulares son patrones utilizados para encontrar una determinada
 + **Posición (Position):** Muestra la posición de la coincidencia del patrón en una cadena caracteres.
 
 <br/>
-<br/>
 
 [<img src="https://i.ibb.co/d4DVvrH/Partes-de-Regex.png" width="600" height="250" />](dedde)
 
@@ -42,13 +28,10 @@ La expresión regular es una cadena de texto, compuesta por delimitadores, patro
 | Patrón (Pattern)|	El elemento central es el patrón, esto es, el patrón de búsqueda general. Se formar a partir de caracteres simples o a partir de una combinación de caracteres simples y especiales .|
 |Delimitador (Delimiter)|	El inicio y el final del patrón se identifican con delimitadores. Los delimitadores son, básicamente, todos los caracteres no alfanuméricos (excepto la barra diagonal inversa). Por ejemplo, para PHP las almohadillas (#pattern#), los signos de porcentaje (%pattern%), el signo más (+pattern+) o las tildes (~pattern~) son delimitadores. La mayoría de lenguajes ya usan las comillas (“pattern”) o las barras diagonales (/pattern/).|
 |Modificador (Modifier)	|Los modificadores pueden añadirse a un patrón de búsqueda para modificar la expresión regular. Un ejemplo es el modificador i, el cual anula la distinción entre mayúsculas y minúsculas. Garantiza que las mayúsculas y las minúsculas se tienen en consideración y que valen por defecto para todas las expresiones regulares.|
-<br/>
 
-<br/>
 <br/>
 
 ## Regular Expressions Cheat Sheet
-#
 <br/>
 
 ## Grupo y rango de caracteres
@@ -105,7 +88,6 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 |**`{n}`**  |{n}?	    |n veces|
 |**`{n,}`** |{n,}?	    |n o más veces|
 |**`{n,m}`**|{n,m}?	|De n a m veces|
-
 <br/>
 
 ## Anclas
@@ -116,8 +98,8 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 |**`$`**    |Encuentra la coincidencia la final de una **linea** de texto. **Ejemplo:** *`[ab]$`* encuentra la linea que finaliza con a o b |
 |**`\A`**   |Comienzo de una cadena de texto (string). Nunca final de línea.|
 |**`\Z`**   |Fin de cadena de texto (string). Nunca final de línea.|
-|**`\\<`**   |Comienzo de una palabra|
-|**`\\>`**   |Fin de una palabra|
+|**`\<`**   |Comienzo de una palabra|
+|**`\>`**   |Fin de una palabra|
 <br/>
 
 ## Patrón Modificador
