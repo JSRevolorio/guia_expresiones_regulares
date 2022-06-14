@@ -1,3 +1,5 @@
+
+
 <style>
 b { color: Blue }
 r { color: red }
@@ -48,34 +50,34 @@ La expresión regular es una cadena de texto, compuesta por delimitadores, patro
 
 | Metacarácter   | Descripción|
 | ---------------|------------|
-| <b>[0-9]</b>   |Encuentra un digito entre el **0** y el **9**.|
-| <b>[a-z]</b>   |Encuentra un carácter entre la **a** y la **z** en minúscula.|
-| <b>[A-Z]</b>   |Encuentra un carácter entre la **A** y la **Z** en mayúscula.|
-| <b>[a-zA-Z]</b>|Encuentra un carácter ya sea minúscula o mayúscula del abecedario|
-| <b>(a\|b)</b>  |Encuentra un carácter entre a o b o ambos ab |
-| <b>[À-ÿ]</b>   |Encuentra un carácter con tilde o diéresis| 
-| <b>[^a-z]</b>  |Encuentra un carácter que no este dentro del abecedario.|
-| <b>[!a-z]</b>  |Encuentra un carácter ya sea minúscula o mayúscula del abecedario|
-| <b>[^]</b>     |El circunflejo ( ^ ) dentro de conchetes es negación como ( ! ) en programación|
-| <b>[!]</b>     |El signo de exclamación ( ! ) dentro de corchetes hacen insensible a minúscula o mayúsculas la expresión|
+| ```diff + [0-9] ```   |Encuentra un digito entre el **0** y el **9**.|
+| ```diff + [a-z] ```   |Encuentra un carácter entre la **a** y la **z** en minúscula.|
+| ```diff + [A-Z] ```   |Encuentra un carácter entre la **A** y la **Z** en mayúscula.|
+| ```diff + [a-zA-Z] ```|Encuentra un carácter ya sea minúscula o mayúscula del abecedario|
+| ```diff + (a\|b) ```  |Encuentra un carácter entre a o b o ambos ab |
+| ```diff + [À-ÿ] ```   |Encuentra un carácter con tilde o diéresis| 
+| ```diff + [^a-z] ```  |Encuentra un carácter que no este dentro del abecedario.|
+| ```diff + [!a-z] ```  |Encuentra un carácter ya sea minúscula o mayúscula del abecedario|
+| ```diff + [^] ```     |El circunflejo ( ^ ) dentro de conchetes es negación como ( ! ) en programación|
+| ```diff + [!] ```     |El signo de exclamación ( ! ) dentro de corchetes hacen insensible a minúscula o mayúsculas la expresión|
 <br/>
 
 ## Clases predefinidas de caracteres
 
 | Metacarácter|Descripción|Equivalente|
 | ------------|-----------|-----------|
-| <b>\s</b>      |Encuentra un espacio en blanco. |*`[ ]`* |
-| <b>\S</b>      |Encuentra cualquier carácter que **no** es un espacio en blanco. |*`[^\t\r\n]`* |
-| <b>\d</b>      |Encuentra un digito o un carácter numérico. |*`[0-9]`* |
-| <b>\D</b>      |Encuentra cualquier carácter que **no** es un digito. |*`[^0-9]`* |
-| <b>\w</b>      |Encuentra cualquier carácter alfanumérico incluido el guion bajo ( _ )|*`[a-zA-Z0-9_]`*|
-| <b>\W</b>      |Encuentra cualquier carácter **no** alfanumérico|*`[^a-zA-z0-9_]`* |
-| <b>\b</b>      |Encuentra la coincidencia la inicio o final de la *palabra*. **Ejemplo:** **`\bpo`** o **`on\b`** |*`po`siti`on`* al inicio o final de la *palabra* |
-| <b>\B</b>      |Encuentra la coincidencia entre la palabra. **Ejemplo:** **`\Bnumer`** |*alfa`numer`ico* se Encuentra entre la palabra |
-| <b>\x</b>      |Encuentra un carácter ASCII o ANSI especificado por un numero hexadecimal. **Ejemplo:** **`\xA9`**|*`©`* carácter que representa *`\xA9`* |
-| <b>\u</b>      |Encuentra un carácter unicode especificado por su código. **Ejemplo:** **`\u00D8`** |*`Ø`* carácter que representa *`\u00D8`* |
-| <b>\0</b>      |Encuentra un carácter null o nul. | *`NULL`*|
-| <b>.</b>       |Encuentra cualquier carácter excepto salto de línea. |*`[\w\D]`* |
+| ```diff + \s ```      |Encuentra un espacio en blanco. |*`[ ]`* |
+| ```diff + \S ```      |Encuentra cualquier carácter que **no** es un espacio en blanco. |*`[^\t\r\n]`* |
+| ```diff + \d ```      |Encuentra un digito o un carácter numérico. |*`[0-9]`* |
+| ```diff + \D ```      |Encuentra cualquier carácter que **no** es un digito. |*`[^0-9]`* |
+| ```diff + \w ```      |Encuentra cualquier carácter alfanumérico incluido el guion bajo ( _ )|*`[a-zA-Z0-9_]`*|
+| ```diff + \W ```      |Encuentra cualquier carácter **no** alfanumérico|*`[^a-zA-z0-9_]`* |
+| ```diff + \b ```      |Encuentra la coincidencia la inicio o final de la *palabra*. **Ejemplo:** **`\bpo`** o **`on\b`** |*`po`siti`on`* al inicio o final de la *palabra* |
+| ```diff + \B ```      |Encuentra la coincidencia entre la palabra. **Ejemplo:** **`\Bnumer`** |*alfa`numer`ico* se Encuentra entre la palabra |
+| ```diff + \x ```      |Encuentra un carácter ASCII o ANSI especificado por un numero hexadecimal. **Ejemplo:** **`\xA9`**|*`©`* carácter que representa *`\xA9`* |
+| ```diff + \u ```      |Encuentra un carácter unicode especificado por su código. **Ejemplo:** **`\u00D8`** |*`Ø`* carácter que representa *`\u00D8`* |
+| ```diff + \0 ```      |Encuentra un carácter null o nul. | *`NULL`*|
+| ```diff + . ```       |Encuentra cualquier carácter excepto salto de línea. |*`[\w\D]`* |
 <br/>
 
 
@@ -92,24 +94,24 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 
 |Greedy	     |Lazy	    |Descripción |
 |------------|----------|------------|
-|<b>*</b>    |\*?	    |0 o más veces|
-|<b>+</b>    |+?	    |1 o más veces|
-|<b>?</b>    |??	    |0 o 1 veces|
-|<b>{n}</b>  |{n}?	    |n veces|
-|<b>{n,}</b> |{n,}?	    |n o más veces|
-|<b>{n,m}</b>|{n,m}?	|De n a m veces|
+|```diff + * ```    |\*?	    |0 o más veces|
+|```diff + + ```    |+?	    |1 o más veces|
+|```diff + ? ```    |??	    |0 o 1 veces|
+|```diff + {n} ```  |{n}?	    |n veces|
+|```diff + {n,} ``` |{n,}?	    |n o más veces|
+|```diff + {n,m} ```|{n,m}?	|De n a m veces|
 <br/>
 
 ## Anclas
 
 |Metacarácter|Descripción |	    
 |------------|------------|
-|<b>^</b>    |Encuentra la coincidencia la inicio de una **linea** de texto. **Ejemplo:** *`^[ab]`*	encuentra la linea que inicia con a o b|
-|<b>$</b>    |Encuentra la coincidencia la final de una **linea** de texto. **Ejemplo:** *`[ab]$`* encuentra la linea que finaliza con a o b |
-|<b>\A</b>   |Comienzo de una cadena de texto (string). Nunca final de línea.|
-|<b>\Z</b>   |Fin de cadena de texto (string). Nunca final de línea.|
-|<b>\\<</b>   |Comienzo de una palabra|
-|<b>\\></b>   |Fin de una palabra|
+|```diff + ^ ```    |Encuentra la coincidencia la inicio de una **linea** de texto. **Ejemplo:** *`^[ab]`*	encuentra la linea que inicia con a o b|
+|```diff + $ ```    |Encuentra la coincidencia la final de una **linea** de texto. **Ejemplo:** *`[ab]$`* encuentra la linea que finaliza con a o b |
+|```diff + \A ```   |Comienzo de una cadena de texto (string). Nunca final de línea.|
+|```diff + \Z ```   |Fin de cadena de texto (string). Nunca final de línea.|
+|```diff + \\< ```   |Comienzo de una palabra|
+|```diff + \\> ```   |Fin de una palabra|
 <br/>
 
 ## Patrón Modificador
