@@ -17,9 +17,12 @@ Las expresiones regulares son patrones utilizados para encontrar una determinada
 
 <br/>
 
-[<img src="https://i.ibb.co/d4DVvrH/Partes-de-Regex.png" width="600" height="250" />](dedde)
+
 
 ## Sintaxis de expresiones regulares
+[<img src="https://i.ibb.co/DQs2r0K/Partes-de-Regex.png" width="600" height="250" />](dedde)
+<br/>
+<br/>
 La expresión regular es una cadena de texto, compuesta por delimitadores, patrones y modificadores opcionales.
  **Ejemplo:** `/patrón/modificadores`
 
@@ -32,9 +35,8 @@ La expresión regular es una cadena de texto, compuesta por delimitadores, patro
 <br/>
 
 ## Regular Expressions Cheat Sheet
-<br/>
 
-## Grupo y rango de caracteres
+### Grupo y rango de caracteres
 
 | Metacarácter   | Descripción|
 | ---------------|------------|
