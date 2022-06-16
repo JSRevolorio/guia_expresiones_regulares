@@ -3,7 +3,8 @@
 # Guía de expresiones regulares
 
 ### Expresiones regulares
-Las expresiones regulares son patrones utilizados para encontrar una determinada combinación de caracteres dentro de una cadena de texto, estos proporcionan una manera muy flexible de buscar o reconocer cadenas de texto. Las expresiones regulares son cadenas de caracteres basadas en reglas sintácticas que permiten describir secuencias de caracteres. Así, forman parte de los lenguajes regulares, los cuales son un subgrupo de los lenguajes formales, de gran importancia para la tecnología de la información y, especialmente, para el desarrollo de software.
+<p style="text-align: justify;">
+Las expresiones regulares son patrones utilizados para encontrar una determinada combinación de caracteres dentro de una cadena de texto, estos proporcionan una manera muy flexible de buscar o reconocer cadenas de texto. Las expresiones regulares son cadenas de caracteres basadas en reglas sintácticas que permiten describir secuencias de caracteres. Así, forman parte de los lenguajes regulares, los cuales son un subgrupo de los lenguajes formales, de gran importancia para la tecnología de la información y, especialmente, para el desarrollo de software.</p>
 
 <br/>
 
@@ -36,11 +37,11 @@ La expresión regular es una cadena de texto que puede estar formada por hasta t
 
 ## Regular Expressions Cheat Sheet
 
-### Metacaracteres basicos
+### **Metacaracteres basicos**
 
 |Metacarácter |Descripción |Ejemplo |
 |-------------|------------|--------|
-|**`-`**      |El guion medio define un rango | *`0-9`* |
+|**`-`**      |El guion medio define un rango o intervalo| *`0-9`* |
 |**`[ ]`**    |Los corchetes contiene set de caracteres | *`[a-z0-9]`* |
 |**`{ }`**    |Las llaves expresan los cuantificadores| *`{2,9}`*|
 |**`( )`**    |Los paréntesis realizan agrupaciones de patrones	| *`(5[a-z])\s(6[a-z])`* |
@@ -49,7 +50,7 @@ La expresión regular es una cadena de texto que puede estar formada por hasta t
 |**`[!]`**    |El signo de exclamación ( ! ) dentro de corchetes hacen insensible a minúscula o mayúsculas   |*`[!a-z]`* |
 <br/>
 
-### Grupo y rango de caracteres
+### **Grupo y rango de caracteres**
 
 | Metacarácter   | Descripción|
 | ---------------|------------|
@@ -65,7 +66,7 @@ La expresión regular es una cadena de texto que puede estar formada por hasta t
 | **`[!a-z]`**   |Encuentra un carácter ya sea minúscula o mayúscula del abecedario|
 <br/>
 
-### Clases predefinidas de caracteres
+### **Clases predefinidas de caracteres**
 
 | Metacarácter|Descripción|Equivalente|
 | ------------|-----------|-----------|
@@ -82,7 +83,7 @@ La expresión regular es una cadena de texto que puede estar formada por hasta t
 <br/>
 
 
-### Cuantificadores
+### **Cuantificadores**
 
 #### **Greedy** (Codicioso)
 Tantos como sea posible (*coincidencia más larga*)
@@ -103,14 +104,14 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 |**`{n,m}`**|{n,m}?	    |De n a m veces|
 <br/>
 
-### Anclas
+### **Anclas**
 
 |Metacarácter|Descripción |	    
 |------------|------------|
 |**`^`**     |Encuentra la coincidencia la inicio de una **línea** de texto. **Ejemplo:** *`^[ab]`*	encuentra la línea que inicia con a o b|
 |**`$`**     |Encuentra la coincidencia la final de una **línea** de texto. **Ejemplo:** *`[ab]$`* encuentra la línea que finaliza con a o b |
-|**`\b`**    |Encuentra la coincidencia la inicio o final de la *palabra*. **Ejemplo:** **`\bpo`** o **`on\b`** = *`po`siti`on`* al inicio o final de la *palabra* | 
-|**`\B`**    |Encuentra la coincidencia entre la palabra. **Ejemplo:** **`\Bnumer`** = alfa`numer`ico* se Encuentra entre la palabra| 
+|**`\b`**    |Encuentra la coincidencia la inicio o final de la *palabra*. **Ejemplo:** **`\bpo`** o **`on\b`** = **po**siti**on** al inicio o final de la *palabra* | 
+|**`\B`**    |Encuentra la coincidencia entre la palabra. **Ejemplo:** **`\Bnumer`** =  alfa**numer**ico se encuentra entre la palabra| 
 |**`\A`**    |Comienzo de una cadena al igual que ( ^ ) para python|
 |**`\Z`**    |Fin de una cadena al igual que ( $ ) para python |
 |**`\<`**    |Comienzo de una cadena al igual que ( ^ ) para algunos sistemas linux|
@@ -118,7 +119,7 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 <br/>
 
 
-### Caracteres especiales
+### **Caracteres especiales**
 
 |Metacarácter| Descripción|
 |------------|------------|
@@ -132,7 +133,7 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 <br/>
 
 
-### Modificadores
+### **Modificadores**
 
 |Metacarácter   |Descripción |
 |---------------|------------|
@@ -145,7 +146,7 @@ En contraste con el cuantificador codicioso estándar, que consume la mayor cant
 | **`U`**        |Indica que el patrón está codificado en UTF-8 |
 <br/>
 
-### Posix
+### **Posix**
 Las expresiones de posix son un tipo especial de clases de caracteres. Las expresiones de corchete posix coinciden con un carácter de un conjunto de caracteres, al igual que las clases de caracteres normales. POSIX define las interfaces de programación de aplicaciones (API) a nivel de sistema y de usuario, junto con los shells de línea de comandos y las interfaces de utilidad, para la compatibilidad del software (portabilidad) con variantes de Unix y otros sistemas operativos.
 
 |posix |Descripción        | Equivalente
@@ -167,12 +168,74 @@ Las expresiones de posix son un tipo especial de clases de caracteres. Las expre
 |**`[:<:]`** |Inicio de una palabra. |*`\A`*
 |**`[:>:]`** |Fin de una palabra |*`\Z`*
 |**`[:alnum:]`** |Caracteres alfanuméricos. |*`[a-zA-Z0-9]`*
-
 <br/>
 
-- Retroferencias
-- string Replacement $n 
-- Declaraciones (Assetion)
-- Comodines Unicode
-- Utiles
+### **referencia trasera**
+**Grupos**
+<br/>
+Un grupo es una sección de una expresión regular encerrada entre paréntesis (). Esto se denomina comúnmente "subexpresión" y tiene dos propósitos:
 
++ Hace que la subexpresión sea atómica, es decir, coincidirá, fallará o se repetirá como un todo.
++ Se puede acceder a la porción de texto con la que coincidió en el resto de la expresión y el resto del programa.
+
+Los grupos están numerados en los motores de expresiones regulares, comenzando con 1. Tradicionalmente, el número máximo de grupos es 9, pero muchas versiones modernas de expresiones regulares admiten un mayor número de grupos. 
+
+```
+(\d[a-z]{2,5})\s([a-z]{2,5})\s(\w)
+      $1             $2        $3
+```
+
+Algunos tipos de expresiones regulares permiten grupos de captura con nombre . En lugar de un índice numérico, puede hacer referencia a estos grupos por su nombre
+`(?<quote>['"])`
+
+
+| Referencias            |         |           Descripcion  |
+|--------------|---------|------------------------|
+|*`$n`*        | *`\n`*  | n-ésimo grupo no pasivo. |
+|*`?<name>`*   |         | Para asignar un nombre al grupo. **Ejemplo:** *`(?<quote>['"])\w+\k{quote}`*     |
+|*`\k<name>`*        | *`\k{name} o \k'name'`*  | Tiene como función referenciar al grupo. **Ejemplo:**  *`(?<quote>['"])\w+\k{quote}`*|
+|*`?:`*        |  | Si desea que el motor no numere un grupo, puede declararlo como no capturador. **Ejemplo:**  *`(\d{4}(?:-\d{2}){2} \d{2}:\d{2}.\d{3}) (.*)[\r\n]+\1 \2`*|
+<br/>
+
+### **Declaraciones (Assetion)**
+|Caracteres | Descripción   |Ejemplo|
+|-----------|---------------|-------|
+|*`x(?=y)`* | **Aserción anticipada:** Coincide con "x" solo si "x" va seguida de "y".  | *`/Jack(?=Sprat)/`* reconocerá a "Jack" solo si va seguida de "Sprat".   |
+|*`x(?!y)`* |**Aserción de búsqueda anticipada negativa:** reconoce la "x" solo si la "x" no va seguida de "y"   |*`/\d+(?!\.)/`* reconoce un número solo si no va seguido de un punto decimal. *`/\d+(?!\.)/.exec('3.141')`* halla el "141" pero no el "3".   |
+|*`(?<=y)x`* |**Aserción de búsqueda inversa:** encontrará "x" solo si "x" está precedida por "y".   | *`/(?<=Jack)Sprat/`* reconoce a "Sprat" solo si está precedido por  "Jack" *`/(?<=Jack\|Tom)Sprat/`* empareja "Sprat" solo si está precedido por "Jack" o "Tom". Sin embargo, ni "Jack" ni "Tom" forman parte del resultado. |
+|*`(?<!y)x`* |**Aserción de búsqueda inversa negativa:** Reconoce la "x" solo si "x" no está precedida por "y".| *`/(?<!-)\d+/`* encuentra un número solo si no está precedido por un signo menos. *`/(?<!-)\d+/.exec('3')`* encuentra el "3". *`/(?<!-)\d+/.exec('-3')`* no lo reconoce porque el número está precedido por el signo menos.   |
+<br/>
+
+
+### **Operadores Logicos y condicionales**
+
+|Operador |  Descripción |Ejemplo|
+|---------|--------------|--------|
+|**`\|`** | Operador OR  | *`(x)\|(y)`* |
+|**`(?(x) y)`** | Si el patron "x" es verdero entoces coincidir con "y"| *`\b(?(\d{2}-)\d{2}-\d{7}\|\d{3}-\d{2}-\d{4})\b`*  |
+|**`(?(x) y\|z)`**  |Si el patron "x" es verdero entoces coincidir con "y" y si no con "z"| *`\b(\d{2}-)?(?(1)\d{7}\|\d{3}-\d{2}-\d{4})\b`*  |
+|**`(?(?=x) y\|z)`**|Si el patron "x" es verdero con asercion entoces coincidir con "y" y si no con "z"    | *`\b(\d{2}-)?(?(1)\d{7}\|\d{3}-\d{2}-\d{4})\b`* |
+<br/>
+
+### **Comodines Unicode**
+
+|Caracteres   |Descripción   |
+|-------------|--------------|
+|*`\p{L}`*    | letras       |
+|*`\p{Ll}`*   | letras minúsculas|
+|*`\p{Lu}`*   | letras mayúsculas|
+|*`\p{N}`*    | números |
+|*`\p{Nl}`*   | números que se representan como letras. Por ejemplo, los números romanos.|
+|*`\p{P}`*    | símbolos de puntuación, como el punto, la coma, el punto y coma, los dos puntos,| comillas.|
+|*`\p{M}`*    | caracteres que se combinan con otros, como los acentos, el circunflejo, la diéresis.|
+|*`\p{Z}`*    | separadores no visibles, como espacios, cambios de línea. |
+|*`\p{S}`*    | símbolos matemáticos, de moneda, dingbats. |
+|*`\p{SM}`*   | símbolos matemáticos. |
+|*`\p{Sc}`*   | símbolos de moneda. |
+<br/>
+
+
+### **Otros**
+
++ [Agrupacion Atomica](https://sodocumentation.net/regex/topic/8770/atomic-grouping)
++ [Lookahead y Lookbehind](https://sodocumentation.net/regex/topic/639/lookahead-and-lookbehind)
